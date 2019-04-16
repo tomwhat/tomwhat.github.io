@@ -55,12 +55,14 @@ body {
 }
 
 #brick_front {
-  width: 100%;
+  max-width:200vw;
+  position:relative;
+  left:100%;
+  margin-left:-200%;
 }
 
 #wreath {
   width: 450px;
-  max-width:90vw;
   position: absolute;
   top:20px;
   z-index:-1;
@@ -68,7 +70,6 @@ body {
 
 #bottom_wreath {
   width: 450px;
-  max-width:90vw;
   position: absolute;
   top:-300px;
   z-index:-1;
