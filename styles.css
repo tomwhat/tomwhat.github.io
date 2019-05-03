@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: ivory;
+  background-color: #FFFFF7;
   font-family: "Palatino Linotype";
   margin:0px;
 }
@@ -36,6 +36,12 @@ body {
   display: inline-block;
   font-size: 1.25em;
   list-style-type: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .title {
@@ -49,28 +55,30 @@ body {
 }
 
 #brick_container {
-  height: 100vh;
-  background-image: url(front.jpg);
+  min-height: 100vh;
+  background-image: url("https://i.ibb.co/cgfWQXc/DSC-6896.jpg");
   background-size:cover;
   background-position:right;
+  justify-content:center;
 }
-
-#brick_front {
-  max-width:200vw;
-  width:1920vw;
-  margin-left:-100vw;
+#brick_container a {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #FFFFF7;
+  margin: 20px;
 }
 
 #wreath {
   width: 450px;
   position: absolute;
   bottom:0px;
+  z-index:-1;
 }
 
-#bottom_wreath {
-  width: 450px;
-  position: absolute;
-  top:0;
+#infobox {
+  background: rgba(255, 255, 250, 0.8);
+  padding:30px;
+  font-size:1.5em;
 }
 
 #event_info {
@@ -90,7 +98,7 @@ body {
 
 #timer li {
   display: inline-block;
-  font-size:4vw;
+  font-size:1em;
   list-style-type:none;
   text-transform: uppercase;
   max-width:23vw;
